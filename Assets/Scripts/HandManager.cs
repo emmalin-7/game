@@ -46,6 +46,14 @@ public class HandManager : MonoBehaviour
     {
         int cardCount = cardsInHand.Count;
 
+        if (cardCount == 1) {
+            cardsInHand[i].transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
+            cardsInHand[i].transform.localPosition = new Vector3(0f, 0f, 0f);
+            return;
+
+
+        }
+
         for (int i = 0; i < cardCount; i++)
         {
             float rotationAngle = (fanSpread * (i - (cardCount - 1) / 2f));
