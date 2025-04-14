@@ -7,11 +7,11 @@ namespace Scales{
     [CreateAssetMenu(fileName = "New Char Card", menuName = "CharCard")]
     public class CharCard: ScriptableObject
     {
-        [field: SerializeField] public string CardName {get;private set;}
+        [field: SerializeField] public string CardName {get;set;}
         
         [field: SerializeField] public int Health {get;set;}
 
-        [field: SerializeField] public Sprite CardSprite {get;private set;}
+        [field: SerializeField] private Sprite CardSprite;
 
 
         // These may be replaced by a spell system
@@ -22,8 +22,5 @@ namespace Scales{
 
 
     }
-
-
-
 
 }
