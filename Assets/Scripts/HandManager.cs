@@ -10,6 +10,7 @@ using System.Runtime.InteropServices;
 
 public class HandManager : MonoBehaviour
 {
+    [field: SerializeField] public DeckManager deckManager;
     [field: SerializeField] public GameObject cardPrefab;  // Assign card prefab in inspector
 
     [field: SerializeField] public Transform handTransform; // Root of the hand positions
