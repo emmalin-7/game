@@ -6,6 +6,6 @@ public class Transition : MonoBehaviour
 {
     void Start() 
     {
-        
+        SceneManager.LoadScene(1); 
     }
 }
