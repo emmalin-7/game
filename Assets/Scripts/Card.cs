@@ -6,9 +6,9 @@ namespace Scales
 {
     public class Card : ScriptableObject
     {
-        [field: SerializeField] public string CardName { get; set; }
+        [field: SerializeField] public string cardName { get; set; }
 
-        [field: SerializeField] private Sprite CardSprite;
+        [field: SerializeField] private Sprite cardSprite;
 
         public enum AttackType
         {

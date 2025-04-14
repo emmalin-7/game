@@ -7,11 +7,13 @@ public class CharCard : Card
 {
 
 
-    [field: SerializeField] public int Health { get; set; }
+    [field: SerializeField] public int health { get; set; }
 
     // These may be replaced by a spell system
-    [field: SerializeField] public int DamageMin { set; get; }
-    [field: SerializeField] public int DamageMax { set; get; }
+    [field: SerializeField] public int damageMin { set; get; }
+    [field: SerializeField] public int damageMax { set; get; }
+
+    [field: SerializeField] public Card.PriorityTarget priorityTarget { set; get; }
 
     // Potentially impliment damage/card types here
 
