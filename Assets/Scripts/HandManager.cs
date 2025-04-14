@@ -24,7 +24,6 @@ public class HandManager : MonoBehaviour
    public void AddCardToHand() 
    {
       // Instantiate the card
-      GameObject newCard = Instantiate(cardPrefab, handTransform.positions, Quaternion.identity, handTransform);
    }
 
 
