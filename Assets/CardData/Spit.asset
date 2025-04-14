@@ -9,12 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89c7f83cbbba34c1d95994bdf8cce3e6, type: 3}
-  m_Name: Snake
+  m_Script: {fileID: 11500000, guid: 8093b9ae11a83429b957a1ee45d1c728, type: 3}
+  m_Name: Spit
   m_EditorClassIdentifier: 
   <cardName>k__BackingField: 
-  cardSprite: {fileID: -6314873947221777332, guid: ea57bd335bb3649d39408884ba720bfe, type: 3}
-  <health>k__BackingField: 0
-  <damageMin>k__BackingField: 0
-  <damageMax>k__BackingField: 0
-  <priorityTarget>k__BackingField: 0
+  cardSprite: {fileID: 0}
+  <spellType>k__BackingField: 0
+  <attributeTarget>k__BackingField: 
