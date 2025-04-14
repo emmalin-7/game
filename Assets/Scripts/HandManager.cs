@@ -24,18 +24,15 @@ public class HandManager : MonoBehaviour
     [field: SerializeField] public float verticalSpacing = 100f;
     void Start() 
     {
-      AddCardToHand();
-      AddCardToHand();
-      AddCardToHand();
-      AddCardToHand();
-      AddCardToHand();
-      AddCardToHand();
+      
     }
 
-    public void AddCardToHand()
+    public void AddCardToHand(Card cardData)
     {
         GameObject newCard = Instantiate(cardPrefab, handTransform.position, Quaternion.identity, handTransform);
         cardsInHand.Add(newCard);
+
+        newCard.GetComponent<DisplayCard>().cardData = cardData;
 
         UpdateHandVisuals();
     }
