@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using Scales;
 using System;
+using UnityEngine.AI;
 
 public class HandManager : MonoBehaviour
 {
@@ -15,7 +16,8 @@ public class HandManager : MonoBehaviour
     [field: SerializeField] public float fanSpread = 5f;
 
     [field: SerializeField] public List<GameObject> cardsInHand = new List<GameObject>(); // Hold a list of card objects in our hand
-
+    
+    [field: SerializeField] public float cardSpacing = 5f;
 
     void Start() 
     {
@@ -43,6 +45,9 @@ public class HandManager : MonoBehaviour
         {
             float rotationAngle = (fanSpread * (i - (cardCount - 1) / 2f));
             cardsInHand[i].transform.localRotation = Quaternion.Euler(0f, 0f, rotationAngle);
+
+            float horizontalOffset = i * cardSpacing;
+            cardsInHand[i].transform.localPosition = new Vector3(horizontalOffset, 0f, 0f);
         }
     }
 }
