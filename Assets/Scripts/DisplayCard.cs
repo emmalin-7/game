@@ -22,11 +22,11 @@ public class DisplayCard : MonoBehaviour
 
     public void UpdateCardDisplay()
     {
-        nameText.text = cardData.CardName;
-        healthText.text = cardData.Health.ToString();
+        nameText.text = cardData.cardName;
+        healthText.text = cardData.health.ToString();
 
         // Will display range of damage (Functional string?) e.g. 6-8
-        damageText.text = $"{cardData.DamageMin} - {cardData.DamageMax}";
+        damageText.text = $"{cardData.damageMin} - {cardData.damageMax}";
         
     }
 
