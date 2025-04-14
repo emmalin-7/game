@@ -27,14 +27,13 @@ namespace Scales
         {
             Damage,
             Buff,
-            Defbuff
+            Debuff
         }
 
         public enum AttributeTarget
         {
             health,
-            damage,
-            priorityTarget,
+            damage
         }
     }
 }

@@ -6,9 +6,11 @@ using TMPro;
 using Scales;
 using System;
 using UnityEngine.AI;
+using System.Runtime.InteropServices;
 
 public class HandManager : MonoBehaviour
 {
+    [field: SerializeField] public DeckManager deckManager;
     [field: SerializeField] public GameObject cardPrefab;  // Assign card prefab in inspector
 
     [field: SerializeField] public Transform handTransform; // Root of the hand positions
@@ -19,7 +21,7 @@ public class HandManager : MonoBehaviour
     
     [field: SerializeField] public float cardSpacing = 100f;
 
-    [field: SerializeField] public float verticalSpacing = 10f;
+    [field: SerializeField] public float verticalSpacing = 100f;
     void Start() 
     {
       AddCardToHand();
@@ -45,6 +47,14 @@ public class HandManager : MonoBehaviour
     private void UpdateHandVisuals()
     {
         int cardCount = cardsInHand.Count;
+
+        if (cardCount == 1) {
+            cardsInHand[i].transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
+            cardsInHand[i].transform.localPosition = new Vector3(0f, 0f, 0f);
+            return;
+
+
+        }
 
         for (int i = 0; i < cardCount; i++)
         {
