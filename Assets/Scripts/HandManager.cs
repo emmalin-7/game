@@ -52,7 +52,9 @@ public class HandManager : MonoBehaviour
             cardsInHand[i].transform.localRotation = Quaternion.Euler(0f, 0f, rotationAngle);
 
             float horizontalOffset = (cardSpacing * (i - (cardCount - 1) / 2f));
-            float verticalOffset = (verticalSpacing * (i - (cardCount - 1) / 2f));
+
+            float normalizedPosition = (2f * i / (cardCount - 1) - 1f);
+            float verticalOffset = verticalSpacing * (1 - normalizedPosition * normalizedPosition);            
             cardsInHand[i].transform.localPosition = new Vector3(horizontalOffset, verticalOffset, 0f);
         }
     }
