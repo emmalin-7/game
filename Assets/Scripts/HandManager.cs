@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using Scales;
 using System;
+using Scales;
 using UnityEngine.AI;
 using System.Runtime.InteropServices;
 
 public class HandManager : MonoBehaviour
 {
-    [field: SerializeField] public DeckManager deckManager;
     [field: SerializeField] public GameObject cardPrefab;  // Assign card prefab in inspector
 
     [field: SerializeField] public Transform handTransform; // Root of the hand positions
@@ -49,8 +48,8 @@ public class HandManager : MonoBehaviour
         int cardCount = cardsInHand.Count;
 
         if (cardCount == 1) {
-            cardsInHand[i].transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
-            cardsInHand[i].transform.localPosition = new Vector3(0f, 0f, 0f);
+            cardsInHand[0].transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
+            cardsInHand[0].transform.localPosition = new Vector3(0f, 0f, 0f);
             return;
 
 
@@ -69,3 +68,4 @@ public class HandManager : MonoBehaviour
         }
     }
 }
+
