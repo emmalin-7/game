@@ -13,12 +13,13 @@ public class HandManager : MonoBehaviour
 
     [field: SerializeField] public Transform handTransform; // Root of the hand positions
 
-    [field: SerializeField] public float fanSpread = 5f;
+    [field: SerializeField] public float fanSpread = 7.5f;
 
     [field: SerializeField] public List<GameObject> cardsInHand = new List<GameObject>(); // Hold a list of card objects in our hand
     
-    [field: SerializeField] public float cardSpacing = 5f;
+    [field: SerializeField] public float cardSpacing = 100f;
 
+    [field: SerializeField] public float verticalSpacing = 10f;
     void Start() 
     {
       AddCardToHand();
@@ -37,6 +38,10 @@ public class HandManager : MonoBehaviour
         UpdateHandVisuals();
     }
 
+    void Update() {
+        UpdateHandVisuals();
+    }
+
     private void UpdateHandVisuals()
     {
         int cardCount = cardsInHand.Count;
@@ -46,8 +51,11 @@ public class HandManager : MonoBehaviour
             float rotationAngle = (fanSpread * (i - (cardCount - 1) / 2f));
             cardsInHand[i].transform.localRotation = Quaternion.Euler(0f, 0f, rotationAngle);
 
-            float horizontalOffset = i * cardSpacing;
-            cardsInHand[i].transform.localPosition = new Vector3(horizontalOffset, 0f, 0f);
+            float horizontalOffset = (cardSpacing * (i - (cardCount - 1) / 2f));
+
+            float normalizedPosition = (2f * i / (cardCount - 1) - 1f);
+            float verticalOffset = verticalSpacing * (1 - normalizedPosition * normalizedPosition);            
+            cardsInHand[i].transform.localPosition = new Vector3(horizontalOffset, verticalOffset, 0f);
         }
     }
 }
