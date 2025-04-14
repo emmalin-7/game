@@ -7,7 +7,7 @@ public class SpellCard : Card
 {
     [field: SerializeField] public SpellType spellType { get; set;}
     [field: SerializeField] public List<AttributeTarget> attributeTarget { get; set;}
-    [field: SerializeField] public List<int> attributeChangeAmount { get; }
+    [field: SerializeField] public List<int> attributeChangeAmount { get;private set;}
 
 
 }
