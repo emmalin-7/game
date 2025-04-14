@@ -4,8 +4,8 @@ using NUnit.Framework.Internal;
 using UnityEngine;
 
 namespace Scales{
-    [CreateAssetMenu(fileName = "New Card", menuName = "Card")]
-    public class Card: ScriptableObject
+    [CreateAssetMenu(fileName = "New Char Card", menuName = "CharCard")]
+    public class CharCard: ScriptableObject
     {
         [field: SerializeField] public string CardName {get;private set;}
         

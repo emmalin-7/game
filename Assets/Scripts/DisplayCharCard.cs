@@ -7,7 +7,7 @@ using Scales;
 
 public class DisplayCard : MonoBehaviour
 {
-    [field: SerializeField] public Card cardData {get;set;}
+    [field: SerializeField] public CharCard cardData {get;set;}
     [field: SerializeField] public Image cardImage {get;set;}
     [field: SerializeField] public TMP_Text nameText {get;set;}
     [field: SerializeField] public TMP_Text healthText {get;set;}
