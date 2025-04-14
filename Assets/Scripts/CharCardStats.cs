@@ -27,6 +27,7 @@ public class CharCardStats : MonoBehaviour
         damageMin = charCardStartData.damageMin;
         damageMax = charCardStartData.damageMax;
         priorityTarget = charCardStartData.priorityTarget;
+        statsSet = true;
     }
 
 }
