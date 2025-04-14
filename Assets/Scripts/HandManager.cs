@@ -19,7 +19,7 @@ public class HandManager : MonoBehaviour
     
     [field: SerializeField] public float cardSpacing = 100f;
 
-    [field: SerializeField] public float verticalSpacing = 10f;
+    [field: SerializeField] public float verticalSpacing = 100f;
     void Start() 
     {
       AddCardToHand();
