@@ -10,6 +10,8 @@ namespace Scales
 
         [field: SerializeField] private Sprite cardSprite;
 
+        [field: SerializeField] public AnimationClip animationClip;
+
         public enum AttackType
         {
             Single,
