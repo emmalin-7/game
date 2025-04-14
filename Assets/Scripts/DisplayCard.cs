@@ -7,7 +7,9 @@ using Scales;
 
 public class DisplayCard : MonoBehaviour
 {
-    [field: SerializeField] public CharCard cardData {get;set;}
+    [field: SerializeField] public SpellCard spellcardData {get;set;}
+    [field: SerializeField] public CharCard chcardData {get;set;}
+
     [field: SerializeField] public Image cardImage {get;set;}
     [field: SerializeField] public TMP_Text nameText {get;set;}
     [field: SerializeField] public TMP_Text healthText {get;set;}
@@ -22,11 +24,11 @@ public class DisplayCard : MonoBehaviour
 
     public void UpdateCardDisplay()
     {
-        nameText.text = cardData.cardName;
-        healthText.text = cardData.health.ToString();
+        nameText.text = chcardData.cardName;
+        healthText.text = chcardData.health.ToString();
 
         // Will display range of damage (Functional string?) e.g. 6-8
-        damageText.text = $"{cardData.damageMin} - {cardData.damageMax}";
+        damageText.text = $"{chcardData.damageMin} - {chcardData.damageMax}";
         
     }
 

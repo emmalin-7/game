@@ -27,12 +27,12 @@ public class HandManager : MonoBehaviour
       
     }
 
-    public void AddCardToHand(CharCard cardData)
+    public void AddCardToHand(SpellCard cardData)
     {
         GameObject newCard = Instantiate(cardPrefab, handTransform.position, Quaternion.identity, handTransform);
         cardsInHand.Add(newCard);
 
-        newCard.GetComponent<DisplayCard>().cardData = cardData;
+        newCard.GetComponent<DisplayCard>().spellcardData = cardData;
 
         UpdateHandVisuals();
     }
