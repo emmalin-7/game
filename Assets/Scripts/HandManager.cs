@@ -7,13 +7,13 @@ using Scales;
 
 public class HandManager : MonoBehaviour
 {
-    [field: SerializeField] public GameObject cardPrefab  // Assign card prefab in inspector
+    [field: SerializeField] public GameObject cardPrefab;  // Assign card prefab in inspector
 
-    [field: SerializeField] public Transform handTransform // Root of the hand positions
+    [field: SerializeField] public Transform handTransform; // Root of the hand positions
 
-   [field: SerializeField] public float fanSpread = 5f 
+    [field: SerializeField] public float fanSpread = 5f;
 
-   [field: SerializeField] public List<GameObject> cardsInHand = new List<GameObject>()// Hold a list of card objects in our hand
+    [field: SerializeField] public List<GameObject> cardsInHand = new List<GameObject>(); // Hold a list of card objects in our hand
 
 
     void Start() 
@@ -24,7 +24,7 @@ public class HandManager : MonoBehaviour
    public void AddCardToHand() 
    {
       // Instantiate the card
-      GameObject newCard = Instantiate(cardPrefab, handTransform.positions), Quaternion.identity)
+      GameObject newCard = Instantiate(cardPrefab, handTransform.positions), Quaternion.identity, handTransform);
    }
 
 
