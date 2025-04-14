@@ -20,11 +20,12 @@ public class HandManager : MonoBehaviour
     {
       AddCardToHand();
     }
-
-   public void AddCardToHand() 
+    public void AddCardToHand() 
    {
       // Instantiate the card
    }
 
+
+   
 
 }
