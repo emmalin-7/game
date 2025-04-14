@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Witch
   m_EditorClassIdentifier: 
   <CardName>k__BackingField: 
-  <Health>k__BackingField: 0
+  <Health>k__BackingField: 100
   CardSprite: {fileID: 0}
-  <DamageMin>k__BackingField: 0
-  <DamageMax>k__BackingField: 0
+  <DamageMin>k__BackingField: 5
+  <DamageMax>k__BackingField: 40

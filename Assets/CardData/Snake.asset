@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Snake
   m_EditorClassIdentifier: 
   <CardName>k__BackingField: 
-  <Health>k__BackingField: 0
-  <CardSprite>k__BackingField: {fileID: 0}
-  <DamageMin>k__BackingField: 0
-  <DamageMax>k__BackingField: 0
+  <Health>k__BackingField: 250
+  CardSprite: {fileID: 0}
+  <DamageMin>k__BackingField: 20
+  <DamageMax>k__BackingField: 50
