@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c7f83cbbba34c1d95994bdf8cce3e6, type: 3}
   m_Name: Scorpion
   m_EditorClassIdentifier: 
-  <cardName>k__BackingField: 
-  health: 0
-  damageMin: 0
-  damageMax: 0
+  <cardName>k__BackingField: Scorpion
+  cardSprite: {fileID: 0}
+  animationClip: {fileID: 0}
+  <health>k__BackingField: 26
+  <damageMin>k__BackingField: 5
+  <damageMax>k__BackingField: 17
+  <priorityTarget>k__BackingField: 0
+  <cardType>k__BackingField: 0

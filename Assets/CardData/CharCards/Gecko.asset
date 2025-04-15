@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c7f83cbbba34c1d95994bdf8cce3e6, type: 3}
   m_Name: Gecko
   m_EditorClassIdentifier: 
-  <cardName>k__BackingField: 
-  health: 0
-  damageMin: 0
-  damageMax: 0
+  <cardName>k__BackingField: Gecko
+  cardSprite: {fileID: 495888534029531607, guid: 563f6742a8b944106a9f21a7c610b3c3, type: 3}
+  animationClip: {fileID: 0}
+  <health>k__BackingField: 15
+  <damageMin>k__BackingField: 7
+  <damageMax>k__BackingField: 14
+  <priorityTarget>k__BackingField: 2
+  <cardType>k__BackingField: 1

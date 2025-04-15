@@ -45,13 +45,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38fe996ce04894434b3a25f3afbf34c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <spellCardData>k__BackingField: {fileID: 0}
-  <charCardData>k__BackingField: {fileID: 0}
-  <cardImage>k__BackingField: {fileID: 1555366431972822372}
+  cardData: {fileID: 0}
+  <cardImage>k__BackingField: {fileID: 0}
   <nameText>k__BackingField: {fileID: 943046081731010155}
+  <displayImage>k__BackingField: {fileID: 0}
+  <cardImageTypes>k__BackingField:
+  - {fileID: -6175319428683107748, guid: 60d3972a8f38648f6bc1c7e68ab8e3e0, type: 3}
+  - {fileID: 2370746031702689491, guid: 94c00ba18abf94ac3a40fcfe0f496d16, type: 3}
+  - {fileID: -8090191231389856688, guid: 559de196a869e4a15936f7df2c274401, type: 3}
   <healthText>k__BackingField: {fileID: 6806084306410351831}
   <damageText>k__BackingField: {fileID: 587964553513229470}
-  <typeImages>k__BackingField: []
+  <descriptionText>k__BackingField: {fileID: 0}
+  <userSymbol>k__BackingField: {fileID: 0}
+  <attributeChangeAmount>k__BackingField: {fileID: 0}
 --- !u!1 &1470295186534217086
 GameObject:
   m_ObjectHideFlags: 0
