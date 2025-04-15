@@ -16,6 +16,12 @@ using Scales;
 
         private int currentIndex = 0;
 
+        void Start () {
+            SpellCard[] cards = Resources.LoadAll<SpellCard>("Spell Cards");
+
+            allCards.AddRange(cards);
+        }
+
     public void DrawCard(HandManager handManager)
         {
             if (allCards.Count == 0)
