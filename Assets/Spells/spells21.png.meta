@@ -447,7 +447,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spells21_0: 1197384742008445801
+      spells21_1: 5389742268325085642
+      spells21_10: -7375851942159926942
+      spells21_11: -5546903560540378515
+      spells21_12: 974737939540523684
+      spells21_2: 1460697413143517776
+      spells21_3: 7261819700431741852
+      spells21_4: 9153802432822830031
+      spells21_5: 3404600133239822609
+      spells21_6: -3766072270721829435
+      spells21_7: -5201662690655199963
+      spells21_8: 6708770825233195916
+      spells21_9: -5301021090029839255
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

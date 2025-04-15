@@ -347,7 +347,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spells19_0: 1074855606173625700
+      spells19_1: 6549077243123341513
+      spells19_2: 503808249309693900
+      spells19_3: 6383641196426194257
+      spells19_4: -2330190885913469177
+      spells19_5: 5205222093708429923
+      spells19_6: 5760819386040427043
+      spells19_7: 6860081728470930432
+      spells19_8: -7200943151621129757
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
