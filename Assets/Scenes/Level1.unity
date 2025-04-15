@@ -399,7 +399,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allCards:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: e04a6602a55e845efb89395c01035118, type: 2}
+  - {fileID: 11400000, guid: 406dfcf24985c4fa888f8dedb0254494, type: 2}
+  - {fileID: 11400000, guid: 5c33d677222c249909d209c4a1a62801, type: 2}
+  - {fileID: 11400000, guid: 701a854d019754f30bcfcd375cc8ca2b, type: 2}
 --- !u!4 &703958231
 Transform:
   m_ObjectHideFlags: 0
