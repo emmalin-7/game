@@ -8,9 +8,11 @@ namespace Scales
     {
         [field: SerializeField] public string cardName { get; set; }
 
-        [field: SerializeField] private Sprite cardSprite;
+        [field: SerializeField] public Sprite cardSprite;
 
         [field: SerializeField] public AnimationClip animationClip;
+
+        
 
         public enum AttackType
         {
@@ -36,6 +38,13 @@ namespace Scales
         {
             health,
             damage
+        }
+
+        public enum CardType
+        {
+            Ally,
+            Enemy,
+            Spell
         }
     }
 }

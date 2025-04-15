@@ -15,6 +15,9 @@ public class CharCard : Card
 
     [field: SerializeField] public Card.PriorityTarget priorityTarget { set; get; }
 
+    [field: SerializeField] public Card.CardType cardType { set; get; }
+
+
     // Potentially impliment damage/card types here
 
 }
