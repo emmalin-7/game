@@ -32,7 +32,7 @@ public class HandManager : MonoBehaviour
         GameObject newCard = Instantiate(cardPrefab, handTransform.position, Quaternion.identity, handTransform);
         cardsInHand.Add(newCard);
 
-        newCard.GetComponent<DisplayCard>().spellCardData = cardData;
+        newCard.GetComponent<DisplayCard>().cardData = cardData;
 
         UpdateHandVisuals();
     }

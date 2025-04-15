@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8093b9ae11a83429b957a1ee45d1c728, type: 3}
-  m_Name: Rally
+  m_Name: Fang
   m_EditorClassIdentifier: 
-  <cardName>k__BackingField: Rally
+  <cardName>k__BackingField: 
   cardSprite: {fileID: 0}
-  <spellType>k__BackingField: 1
-  <attributeTarget>k__BackingField: 00000000
-  <attributeChangeAmount>k__BackingField: 05000000
+  animationClip: {fileID: 0}
+  <spellType>k__BackingField: 0
+  <attributeTarget>k__BackingField: 
+  <attributeChangeAmount>k__BackingField: 
+  cardType: 2
